@@ -50,7 +50,7 @@ var chart = new Highcharts.Chart({
         marker: {
           enabled: false
         },
-        stacking: 'normal',
+        stacking: null,
         fillOpacity: 1
       }
     },
