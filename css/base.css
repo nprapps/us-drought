@@ -2884,3 +2884,6 @@ article .stories h4 {
 .no-boxshadow .wax-tooltip {
   border: 1px solid #ddd;
 }
+.span8 {
+  width: 620px;
+}
