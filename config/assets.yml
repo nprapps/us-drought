@@ -1,0 +1,24 @@
+compress_assets: on
+gzip_assets: off
+
+javascripts:
+    drought:
+        - js/underscore.js
+        - js/date.js
+        - js/jquery-ui-1.8.17.custom.js
+        - js/jquery.ui.touch-punch.js
+        - js/bootstrap-transition.js
+        - js/bootstrap-tooltip.js
+        - js/bootstrap-popover.js
+        - js/bootstrap-carousel.js
+        - js/jsticky.js
+        - js/scrollspy.js
+        - js/map_images.js
+        - js/mapslider.js
+        - js/highcharts.js
+        - js/chart.js
+        - js/wax/ext/modestmaps.min.js
+        - js/wax/dist/wax.mm.js
+        - js/mm.map.js
+        - js/events.js
+        

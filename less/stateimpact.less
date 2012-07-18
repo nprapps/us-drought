@@ -1,0 +1,138 @@
+// StateImpact data project styles
+
+// Header
+.si-nav {
+	background: url(../img/nav-bg.png) repeat-x;
+	font-family: @condensedFontFamily;
+	-webkit-font-smoothing: antialiased;
+	margin: 0 auto 20px;
+
+	nav { 
+		position: relative; 
+		.partnership {
+			display: block; 
+			position: absolute; 
+			left: 320px; 
+			top: 17px; 
+			font-size: 14px;
+			line-height: 17px;
+			height: 17px;
+			color: @grayLight;
+			-webkit-font-smoothing: antialiased;
+		}
+		.nprlogo { 
+			width: 51px; 
+			height: 17px; 
+		}
+
+	}
+	h2 a {
+		.ir;
+		.size(71px,192px);
+		background: url(../img/logo.png) no-repeat;
+		position: absolute;
+		top: -10px;
+		left: 0;
+	}
+	h3 a {
+		display: block; 
+		float: left;
+		margin: 0 0 0 190px;
+		padding: 0 15px;
+		font-family: @baseFontFamily;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 50px;
+		color: #fff;
+		border-right: 1px solid #444;
+		.box-shadow(1px 0 0 #000);
+		&:hover {
+	      text-decoration: none;
+	      color: darken(#fff, 15%)
+	    }
+	}
+
+	ul {
+		position: absolute;
+		right: 0;
+		height: 50px;
+		list-style: none;
+		li { 
+			float: left;
+			line-height: 50px;
+			font-size: 16px;
+			font-weight: 600; 
+			text-transform: uppercase;
+			margin-left: 25px;
+		}
+		a { color: #999; }
+	}
+}
+
+
+// Typography
+
+.section-hed {
+	font-family: @condensedFontFamily;
+	text-transform: uppercase;
+	color: @black;
+}
+
+.intro {
+	text-align: right;
+	margin-bottom: 20px;
+
+	.headline { 
+		font:700 42px @condensedFontFamily;
+		text-transform: uppercase;
+		color: @black;
+	}
+
+	h2 {
+		font-weight: 600;
+		color: @gray;
+		line-height: 1.1;
+		margin-bottom: 10px
+	}
+
+	h4 {
+		font: 400 14px/17px @baseFontFamily;
+		color: @grayLight;
+		a { 
+			color: @grayLight; 
+			&:hover{ color: @linkColor; }
+		}
+	}
+
+	p { 
+		text-align: left;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.3;
+		color: @gray;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		li {
+			float: left;
+			margin: 0;
+		}
+	}
+}
+
+.nprlogo {
+	display: inline-block;
+	background: url(../img/npr-transparent.png) no-repeat;
+	width: 50px;
+	height: 17px;
+}
+
+footer { 
+	p {
+		font-size: 14px;
+	}
+	.partnership,
+	.copyright { text-align: right; }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+
+  <title>Tracking The U.S. Drought </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- CSS
+  ================================================== -->
+
+  <link rel="stylesheet" href="css/base.css">
+
+</head>
+<body data-spy="scroll" data-target=".sig-nav">
+    <article id="container" class="container">
+      <header class="intro row">
+        <div class="span8">
+		</div>
+      </header>
+      <div class="sig-nav row">
+        <div class="span12">
+          <div class="pagination">
+          </div>
+        </div>
+      </div>   
+      <section class="sig-section-1 row" id="history">
+        <div class="span8 map">
+          <h3>US Drought Area by Severity</h3>
+          <nav class="sig-map-control">
+            <a class="btn" id="play-slider"><i class="icon-play" id="play-icon"></i></a>
+            <div id="slider"></div>
+            <p class="muted"><em>Drag the slider to watch the drought map change over time. Press play to automatically advance.</em></p>
+          </nav>
+          <h4 id="map-date"></h4>
+          <span id="drought-map"><img src="./img/maps/2012-06-05.png"></span>
+          <p class="muted legend-tip"><em>Hover over legend colors for category definitions.</em></p>
+        </div>
+        </div>
+        <div class="span12 chart">          
+          <h3>Surface Area of U.S. in Drought by Severity</h3>
+          <div id="texas-drought" style="width: 100%; height: 175px;"></div>
+          <div class="legend">
+            <ul>
+              <li><i class="icon-question-sign d0" data-placement="top" data-title="" data-content='This is the lightest level, which means the area is either &ldquo;going into drought: short-term dryness slowing planting, growth of crops or pastures&rdquo; or getting out of drought, which means &ldquo;some lingering water deficits; and pastures or crops not fully recovered,&rdquo; according to the National Drought Monitor.' rel="popover"></i>Abnormally Dry</li>
+              <li><i class="icon-question-sign d1" data-placement="top" data-title="" data-content='This level of drought involves &ldquo;some damage to crops, pastures; streams, reservoirs, or wells low, some water shortages developing or imminent; and voluntary water-use restrictions requested,&rdquo; according to the monitor.' rel="popover"></i>Moderate Drought</li>
+              <li><i class="icon-question-sign d2" data-placement="top" data-title="" data-content='This level means that &ldquo;crop or pasture losses likely; water shortages common; and water restrictions imposed,&rdquo; the monitor states.' rel="popover"></i>Severe Drought</li>
+              <li><i class="icon-question-sign d3" data-placement="top" data-title="" data-content='This is the second-highest level of drought, with  &ldquo;major crop/pasture losses&rdquo; and  &ldquo;widespread water shortages or restrictions.&rdquo;' rel="popover"></i>Extreme Drought</li>
+              <li><i class="icon-question-sign d4" data-placement="top" data-title="" data-content='This is the most intense level of drought. This level involves &ldquo;exceptional and widespread crop/pasture losses; shortages of water in reservoirs, streams, and wells creating water emergencies.&rdquo;' rel="popover"></i>Exceptional Drought</li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+  <!-- JS
+  ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script src="js/drought.js"></script>
+
+
+</body>
+</html>

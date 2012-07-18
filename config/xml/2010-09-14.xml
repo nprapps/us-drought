@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#ffffff">
+
+
+<Style name="states" filter-mode="first">
+  <Rule>
+    <Filter>([ISO] = 'USA')</Filter>
+    <LineSymbolizer stroke="#cccccc" stroke-width="0.8" />
+    <PolygonSymbolizer fill="#f5f5f5" />
+  </Rule>
+</Style>
+<Layer name="states"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>states</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/camico/Documents/MapBox/project/tx-drought/layers/states/0f063a75-10m-admin-1-states-provinces-lakes-shp.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="drought" filter-mode="first">
+  <Rule>
+    <Filter>([DM] = 4)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#a33622" fill-opacity="0.95" />
+  </Rule>
+  <Rule>
+    <Filter>([DM] = 3)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#d9482b" fill-opacity="0.95" />
+  </Rule>
+  <Rule>
+    <Filter>([DM] = 2)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#e28d2b" fill-opacity="0.95" />
+  </Rule>
+  <Rule>
+    <Filter>([DM] = 1)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#efc635" fill-opacity="0.95" />
+  </Rule>
+  <Rule>
+    <Filter>([DM] = 0)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#f3d56a" fill-opacity="0.95" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#aaee88" fill-opacity="0.95" />
+  </Rule>
+</Style>
+<Layer name="drought"
+  srs="+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs">
+    <StyleName>drought</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/camico/code/python/maps/texas-drought/data/usdm2011/USDM100914.shp]]></Parameter>
+       <Parameter name="id"><![CDATA[drought]]></Parameter>
+       <Parameter name="project"><![CDATA[tx-drought]]></Parameter>
+       <Parameter name="srs"><![CDATA[null]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="states_top" filter-mode="first">
+  <Rule>
+    <Filter>([NAME_1] = 'Texas')</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="0.9" stroke-opacity="0.3" />
+  </Rule>
+</Style>
+<Layer name="states_top"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>states_top</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/camico/Documents/MapBox/project/tx-drought/layers/states_top/0f063a75-10m-admin-1-states-provinces-lakes-shp.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
