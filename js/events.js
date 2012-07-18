@@ -6,7 +6,7 @@ Each event needs an array:
 
 ****/
 jQuery(function($) {
-    var category = "Texas Drought";
+    var category = "US Drought";
     window._gaq = window._gaq || [];
         
     slider.bind('slidestart', function(e, ui) {
