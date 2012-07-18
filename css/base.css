@@ -105,7 +105,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -289,7 +289,7 @@ a:hover {
 }
 p {
   margin: 0 0 10px;
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -2083,8 +2083,11 @@ input[type="submit"].btn.small {
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
+.popover-title {
+  display: none;
+}
 .popover-content {
-  padding: 14px;
+  padding: 14px 14px 14px 14px;
   color: #eeeeee;
 }
 .popover-content p,
@@ -2255,7 +2258,7 @@ a.thumbnail:hover {
 }
 .si-nav {
   background: url(../img/nav-bg.png) repeat-x;
-  font-family: proxima-nova-extra-condensed, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0 auto 20px;
 }
@@ -2294,7 +2297,7 @@ a.thumbnail:hover {
   float: left;
   margin: 0 0 0 190px;
   padding: 0 15px;
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 50px;
@@ -2326,7 +2329,7 @@ a.thumbnail:hover {
   color: #999;
 }
 .section-hed {
-  font-family: proxima-nova-extra-condensed, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
@@ -2335,7 +2338,7 @@ a.thumbnail:hover {
   margin-bottom: 20px;
 }
 .intro .headline {
-  font: 700 42px proxima-nova-extra-condensed, "Helvetica Neue", Arial, sans-serif;
+  font: 700 42px "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
@@ -2346,7 +2349,7 @@ a.thumbnail:hover {
   margin-bottom: 10px;
 }
 .intro h4 {
-  font: 400 14px/17px proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font: 400 14px/17px "Helvetica Neue", Arial, sans-serif;
   color: #999999;
 }
 .intro h4 a {
@@ -2470,7 +2473,7 @@ footer .copyright {
   border-radius: 0;
 }
 .intro .playlist li .timing {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 14px !important;
   right: 5px !important;
   top: 35px !important;
@@ -2550,7 +2553,7 @@ article section h1 {
   margin: 15px 0;
 }
 article section h3 {
-  font-family: proxima-nova-extra-condensed, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
 }
 article section#history h1 {
@@ -2576,7 +2579,7 @@ article section#impact .summary-stats h4 {
   color: #555555;
 }
 article section#impact .summary-stats p {
-  font-family: proxima-nova-extra-condensed, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 60px;
   line-height: 1;
   font-weight: 300;
@@ -2624,12 +2627,13 @@ article .stories img {
   margin: 0 10px 10px 0;
 }
 article .stories h4 {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.1;
 }
 .sig-map-control {
+  height: 55px;
   position: relative;
 }
 .sig-map-control .muted {
@@ -2696,14 +2700,15 @@ article .stories h4 {
   z-index: 100;
   text-align: right;
 }
+.highcharts-tooltip text,
 .highcharts-tooltip text tspan,
 .highcharts-legend text {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 13px !important;
   line-height: 110%;
 }
 .highcharts-axis text {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Arial, sans-serif !important;
   font-size: 12px;
 }
 .chart {
