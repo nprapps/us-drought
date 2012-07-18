@@ -61,20 +61,4 @@
        <Parameter name="type"><![CDATA[shape]]></Parameter>
     </Datasource>
   </Layer>
-
-<Style name="states_top" filter-mode="first">
-  <Rule>
-    <Filter>([NAME_1] = 'Texas')</Filter>
-    <LineSymbolizer stroke="#000000" stroke-width="0.9" stroke-opacity="0.3" />
-  </Rule>
-</Style>
-<Layer name="states_top"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>states_top</StyleName>
-    <Datasource>
-       <Parameter name="file"><![CDATA[/Users/camico/Documents/MapBox/project/tx-drought/layers/states_top/0f063a75-10m-admin-1-states-provinces-lakes-shp.shp]]></Parameter>
-       <Parameter name="type"><![CDATA[shape]]></Parameter>
-    </Datasource>
-  </Layer>
-
 </Map>
