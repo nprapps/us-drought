@@ -2671,6 +2671,7 @@ article .stories h4 {
   bottom: 0;
   left: 25px;
   font-size: 13px;
+  line-height: 1.1;
   width: 160px;
 }
 .ag-losses {
@@ -2707,11 +2708,13 @@ article .stories h4 {
 }
 .chart {
   position: relative;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 .legend {
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 0;
+  left: 0;
 }
 .legend ul {
   list-style: none;
