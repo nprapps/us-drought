@@ -11,6 +11,7 @@ Number.prototype.commafy = function () {
 var chart = new Highcharts.Chart({
     chart: {
       marginLeft: 40,
+      marginRight: 10,
       marginTop: 5,
       spacingLeft: 0,
       spacingRight: 0,
@@ -76,12 +77,16 @@ var chart = new Highcharts.Chart({
             });
 
             return s;
+        },
+        style: {
+          font: '"Helvetica Neue",Helvetica,Arial,sans-serif'
         }
     },
     xAxis: {
       minPadding: 0,
       maxPadding: 0,
       startOnTick: true,
+      endOnTick: true,
       tickInterval: 1,
       tickLength: 0,
       tickmarkPlacement: 'on',
