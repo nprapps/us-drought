@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -126.6504,
+    23.6847,
+    -66.3574,
+    50.4854
+  ],
+  "center": [
+    -97.251,
+    39.9434,
+    5
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 11,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "id": "states",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lakes-shp.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "states"
+    },
+    {
+      "geometry": "multipolygon",
+      "id": "drought",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/camico/code/python/maps/texas-drought/data/usdm2011/usdm110913.shp",
+        "id": "drought",
+        "project": "tx-drought",
+        "srs": null
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "drought"
+    },
+    {
+      "geometry": "polygon",
+      "id": "states_top",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-1-states-provinces-lakes-shp.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "states_top"
+    }
+  ],
+  "name": "Texas Drought",
+  "description": "",
+  "attribution": ""
+}
