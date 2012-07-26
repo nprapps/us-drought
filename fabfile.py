@@ -1,8 +1,4 @@
-from gevent import monkey
-monkey.patch_all()
-
 import datetime
-import gevent
 import glob
 import json
 import os
@@ -46,10 +42,8 @@ def render_config_xml(filename):
     
 def render_all_maps():
     shapes = glob.glob('data/usdm*/*.shp')
-    jobs = [gevent.spawn(render_map, filename) for filename in shapes]
-    gevent.joinall(jobs)
-    #for filename in shapes:
-    #    render_map(filename)
+    for filename in shapes:
+        render_map(filename)
     json_map_list()
 
 def render_map(filename):
