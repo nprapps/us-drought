@@ -1,7 +1,7 @@
 Tracking the Drought
 =======================
 
-This project builds a timeline of US drought conditions using data from the US Drought Monitoring Center. It should produce an HTML page that can be embedded as an iframe.
+This project builds a timeline of US drought conditions using data from the US Drought Monitor. It should produce an HTML page that can be embedded as an iframe.
 
 Getting started
 ---------------
@@ -20,7 +20,7 @@ Note that this environment will use your global site packages directory, which i
 
 Now we're ready to grab the code and build this thing. Clone the repo, install requirements and run the build script.
 
-    $ cdvirtualenv # go to the root of our new virtualenv
+    $ cdvirtualenv # go to the root of our new virtualenv (workon drought)
     $ git clone git@github.com:npr/us-drought.git
     $ cd us-drought
     $ pip install -r requirements.txt
@@ -30,11 +30,11 @@ To see the result:
 
     $ python -m SimpleHTTPServer
 
-Now go to <http://localhost:8000>.
+Now go to <http://localhost:8000>.	
 
 To update map-slider:
 
- 1. Download the latest shapefiles from the [US Drought Monitoring Center][usdm]
+ 1. Download the latest shapefiles from the [US Drought Monitor][usdm]
  2. Unzip files and add them to the `data` directory. The folder and shapefile within should be named something like `usdm120412`.
  3. Run `fab rebuild`
 
